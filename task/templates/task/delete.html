@@ -37,7 +37,7 @@
         }
     
         .item-row{
-            background-color: #906abd;
+            background-color: #6abdb2;
             margin: 10px;
             padding: 20px;
             border-radius: 3px;
@@ -47,7 +47,7 @@
         }
     
         .btn-danger{
-            background-color: #ffae19;
+            background-color: #ff4719;
             border-color: #e59400;
         }
     
@@ -55,7 +55,7 @@
 </head>
 <body>
     <div class="center-column">
-        <p class=""> are you sure you want to delete ? "{{item}}" </p>
+        <p class="text-center text-capitalize bg-dark text-white"> are you sure you want to delete ? "{{item}}" </p>
         
         <a class="btn btn-info" href="{%  url 'index' %}">cancel</a>
         
@@ -63,7 +63,7 @@
         <form method="POST" action="">
             {% csrf_token %}
            
-        <input type="submit" value="confirm">
+        <input class="btn btn-danger" type="submit" value="confirm">
         </form>
         
         </div>  
